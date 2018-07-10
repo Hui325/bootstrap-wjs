@@ -1,0 +1,344 @@
+
+i, em {
+  font-style: normal;
+}
+ul{
+  list-style: none;
+}
+
+a {
+  color: #333;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a:hover{
+  color:#e92322;
+}
+
+/* 头部*/
+.wjs_header {
+  border-bottom: 1px solid #ccc;
+}
+.wjs_header .item {
+  height: 40px;
+  line-height: 40px;
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
+.wjs_header .item:last-child{
+  border-right: none;
+}
+.wjs_header .phone{
+  position: relative;
+  display: block;
+}
+.wjs_header .phone:hover .code{
+  display: block;
+}
+.wjs_header .code{
+  border: 1px solid #ccc;
+  position: absolute;
+  top:40px;
+  left:50%;
+  transform : translateX(-50%);
+  display: none;
+}
+.wjs_header .btn-regist{
+  padding: 2px 12px;
+}
+.wjs_header .btn-login{
+  text-decoration: none;
+}
+.wjs_header .btn-login:hover{
+  color : #e92322;
+}
+
+/* 导航*/
+.wjs_nav{
+  height: 81px;
+  border-bottom: 1px solid #ccc;
+}
+.wjs_nav .navbar{
+  margin: 0;
+  background: transparent;
+  border: none;
+}
+.wjs_nav .navbar-default .navbar-nav > .active > a,
+.wjs_nav .navbar-default .navbar-nav > .active > a:hover,
+.wjs_nav .navbar-default .navbar-nav > .active > a:focus{
+  background: transparent;
+  border-bottom : 3px solid #e92322;
+}
+.wjs_nav .navbar-default .collapse{
+  background-color: #fff;
+  position: relative;
+  z-index: 666;
+}
+.wjs_nav .navbar-nav > li > a{
+  height: 80px;
+  line-height: 50px;
+}
+.wjs_nav .navbar-collapse a:hover{
+  border-bottom : 3px solid #e92322;
+}
+.wjs_nav .navbar-brand .wjs_icon_logo{
+  font-size: 50px;
+  vertical-align: middle;
+  color:#e92322;
+}
+.wjs_nav .navbar-brand .wjs_icon_word{
+  font-size: 36px;
+  vertical-align: middle;
+  color:#000;
+
+}
+.wjs_nav .navbar-brand {
+  height: 80px;
+  line-height: 50px;
+}
+.wjs_nav .navbar-header .navbar-toggle{
+  margin-top: 23px;
+}
+
+/* 轮播图*/
+/* 在640px屏幕以上显示大图，小于640px的屏幕就切换小图用js实现*/
+@media screen and (min-width: 640px){
+  .wjs_banner .carousel-inner .item{
+    height: 410px;
+    overflow: hidden;
+  }
+  .wjs_banner .carousel-inner .item img{
+    height: 410px;
+    max-width: none;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform : translateX(-50%);
+  }
+}
+
+/* 信息区域*/
+.wjs_info{
+  padding: 50px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.wjs_info .media{
+  margin:0;
+  height: 80px;
+}
+.wjs_info .media a{
+  padding: 32px 0;
+}
+.wjs_info .media i{
+  font-size: 36px;
+  line-height: 70px;
+}
+
+/* 预约区域 */
+.wjs_book{
+  padding : 30px 0;
+  line-height: 28px;
+  border-bottom: 1px solid #ccc;
+}
+.wjs_book .book_left{
+  float: left;
+}
+.wjs_book .book_left a{
+  color : #e92322;
+  border-bottom: 1px dashed #e92322;
+}
+.wjs_book .book_right{
+  float: right;
+}
+.wjs_book .book_right:hover{
+  color: #e92322;
+}
+
+/* 产品区域*/
+.wjs_product {
+  padding : 30px 0;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+.wjs_product .tab_wrapper{
+  overflow: hidden;
+}
+.wjs_product .nav-tabs > li.active > a,
+.wjs_product .nav-tabs > li.active > a:hover,
+.wjs_product .nav-tabs > li.active > a:focus{
+  border : none;
+  background: transparent;
+  border-bottom: 3px solid #e92322;
+
+}
+.wjs_product .nav-tabs > li > a{
+  border : none;
+}
+
+.wjs_product .nav > li > a:hover,
+.wjs_product .nav > li > a:focus{
+  background: transparent;
+}
+
+.wjs_product .tab-content .tab_pro{
+  height: 150px;
+  background-color: pink;
+  margin-top: 20px;
+  position: relative;
+}
+.wjs_product .tab-content .tab_pro.current{
+  background-color: #e92322;
+  color:#fff;
+}
+.wjs_product .tab_pro_right{
+  width: 80px;
+  height: 150px;
+  float: right;
+  text-align: center;
+  border-left: 1px dashed blue;
+  position: relative;
+}
+.wjs_product .tab_pro_right:before,
+.wjs_product .tab_pro_right:after{
+  content: "";
+  position: absolute;
+  left:-10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+.wjs_product .tab_pro_right:before{
+  top:-10px;
+}
+.wjs_product .tab_pro_right:after{
+  bottom:-10px;
+}
+.wjs_product .tab_pro_right .num{
+  margin-top: 40px;
+}
+.wjs_product .tab_pro_right .num b{
+  font-size: 30px;
+
+}
+.wjs_product .tab_pro_right p{
+  font-size: 16px;
+}
+
+.wjs_product .tab_pro_left{
+  height: 150px;
+  overflow: hidden;
+}
+.wjs_product .tab_pro_left h3{
+  font-size: 18px;
+  text-align: center;
+}
+.wjs_product .tab_pro_left p{
+  margin: 0 0 5px;
+}
+.wjs_product .tab_pro_left .wjs_icon{
+  position: absolute;
+  top:-9px;
+  left:0;
+  font-size: 40px;
+}
+
+/* 新闻区域*/
+.wjs_news{
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc;
+}
+.news_title{
+  font-size: 20px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #e92322;
+  position: relative;
+}
+.news_title:after{
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #e92322;
+  position: absolute;
+  bottom: -3px;
+  right:-6px;
+}
+.wjs_news .mytab{
+  position: relative;
+}
+.wjs_news .mytab .line{
+  border-left:1px dashed #ccc;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:30px;
+
+}
+.wjs_news .mytab a{
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+  z-index: 666;
+}
+.wjs_news .mytab li.active a{
+  background-color: #e92322;
+}
+.wjs_news .mytab ul{
+  margin: 0;
+  padding: 0;
+}
+.wjs_news .mytab li{
+  margin-bottom: 60px;
+}
+.wjs_news .mytab ul li:last-child{
+  margin-bottom: 0px;
+}
+.wjs_news .mytab a i{
+  font-size: 30px;
+  color:#fff;
+}
+.wjs_news .news_list li{
+  margin: 10px 0;
+}
+
+/*!*新闻区域 适应屏幕大小设置不同样式*!*/
+@media screen and (max-width: 992px) {
+  .wjs_news .mytab ul{
+    margin : 20px 0;
+  }
+  .wjs_news .mytab li{
+    float: left;
+    width: 25%;
+    margin: 0 0px;
+  }
+  .wjs_news .mytab li a{
+    margin: 0 auto;
+  }
+}
+/* 合作伙伴区域*/
+.wjs_partner{
+  padding :30px 0;
+  text-align: center;
+}
+.wjs_partner h3{
+  text-align: center;
+}
+.wjs_partner li{
+  display: inline-block;
+  font-size: 60px;
+  margin: 0 30px;
+}
